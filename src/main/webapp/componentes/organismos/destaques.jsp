@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="css/destaques.css">
 <section class="destaques">
     <div class="destaque">
         <h2>Clube de Vinhos</h2>

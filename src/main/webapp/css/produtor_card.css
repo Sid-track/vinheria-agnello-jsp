@@ -1,0 +1,35 @@
+.produtor {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    padding: 1rem;
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.produtor:hover {
+    transform: translateY(-5px);
+}
+
+.produtor img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+    height: 150px;
+    object-fit: cover;
+}
+
+.produtor h3 {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    color: #3a2c27;
+    font-family: 'Playfair Display', serif;
+}
+
+.produtor p {
+    font-size: 0.95rem;
+    color: #6d4c41;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.5rem;
+}

@@ -1,0 +1,42 @@
+.destaques {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.destaque {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    flex: 1;
+    text-align: center;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.destaque:hover {
+    transform: translateY(-4px);
+}
+
+.destaque h2 {
+    margin-bottom: 0.5rem;
+    color: #4b1e22;
+    font-family: 'Playfair Display', serif;
+}
+
+.destaque p {
+    color: #6d4c41;
+    margin-bottom: 1rem;
+}
+
+.destaque .link {
+    color: #4b1e22;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.destaque .link:hover {
+    color: #6d2c31;
+}

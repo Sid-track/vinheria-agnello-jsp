@@ -1,0 +1,53 @@
+.kit {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    padding: 1rem;
+    width: 220px;
+    transition: transform 0.3s ease;
+}
+
+.kit:hover {
+    transform: translateY(-5px);
+}
+
+.kit img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+}
+
+.kit h3 {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    color: #3a2c27;
+    font-family: 'Playfair Display', serif;
+}
+
+.kit p {
+    font-size: 0.95rem;
+    color: #6d4c41;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.kit .preco {
+    font-weight: bold;
+    color: #4b1e22;
+    margin-bottom: 0.75rem;
+}
+
+.kit .btn {
+    background-color: #4b1e22;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.kit .btn:hover {
+    background-color: #6d2c31;
+}

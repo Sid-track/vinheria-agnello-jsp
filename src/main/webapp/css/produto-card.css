@@ -1,0 +1,65 @@
+.produtos-destaque {
+    margin-top: 2rem;
+}
+
+.produtos-destaque h2 {
+    margin-bottom: 1.5rem;
+    color: #4b1e22;
+    font-family: 'Playfair Display', serif;
+}
+
+.produtos {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.produto-card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.produto-card:hover {
+    transform: scale(1.03);
+}
+
+.produto-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+}
+
+.produto-card h3 {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    color: #3a2c27;
+    font-family: 'Playfair Display', serif;
+}
+
+.produto-card p {
+    color: #6d4c41;
+    margin-bottom: 0.5rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.produto-card .btn {
+    background-color: #4b1e22;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+.produto-card .btn:hover {
+    background-color: #6d2c31;
+}

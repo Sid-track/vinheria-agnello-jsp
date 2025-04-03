@@ -1,0 +1,33 @@
+.layout {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.conteudo {
+    flex: 1;
+    padding: 2rem;
+    overflow-x: hidden;
+}
+
+.sidebar {
+    width: 250px;
+    min-height: 100vh;
+    background-color: #4b1e22;
+    color: #fff;
+    padding: 2rem 1rem;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f9f6f3;
+    color: #3a2c27;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
