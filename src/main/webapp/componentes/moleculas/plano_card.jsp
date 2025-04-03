@@ -1,5 +1,8 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<link rel="stylesheet" href="css/plano_card.css" />
+
 <div class="plano">
-    <h2>${plano.nome}</h2>
-    <p>${plano.descricao}</p>
-    <p>R$ ${plano.preco}</p>
+    <h2>${param.nome}</h2>
+    <p>${param.descricao}</p>
+    <p>R$ ${param.preco}</p>
 </div>

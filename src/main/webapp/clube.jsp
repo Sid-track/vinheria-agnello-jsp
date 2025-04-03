@@ -1,4 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ include file="/componentes/organismos/template.jsp" %>
 
 <link rel="stylesheet" href="css/clube.css">
@@ -15,7 +17,11 @@
 
 <section class="clube-planos">
     <c:forEach var="plano" items="${planos}">
-        <jsp:include page="/componentes/moleculas/plano_card.jsp" />
+        <jsp:include page="/componentes/moleculas/plano_card.jsp">
+            <jsp:param name="nome" value="${plano.nome}" />
+            <jsp:param name="descricao" value="${plano.descricao}" />
+            <jsp:param name="preco" value="${plano.preco}" />
+        </jsp:include>
     </c:forEach>
 </section>
 
