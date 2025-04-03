@@ -1,8 +1,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="css/menu.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
 <aside class="sidebar" id="sidebar">
-    <div class="logo">Vinheria Agnello</div>
+    <div class="logo">
+        <img src="${pageContext.request.contextPath}/images/logo-branco.png" alt="Logo Vinheria Agnello" /
+    </div>
     <nav>
         <ul>
             <li><a href="${pageContext.request.contextPath}/home"><i class="fa-solid fa-house"></i> Home</a></li>

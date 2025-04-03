@@ -1,12 +1,11 @@
 
-.hero {
+.hero-promo {
     position: relative;
-    background-image: url('../images/banner-vinhos.jpg');
+    background-image: url('../images/promocao.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 12px;
-    height: 400px;
+    height: 18rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,7 +18,7 @@
     overflow: hidden;
 }
 
-.hero::before {
+.hero-promo::before {
     content: '';
     position: absolute;
     top: 0; left: 0;
@@ -29,28 +28,28 @@
     z-index: 1;
 }
 
-.hero > * {
+.hero-promo > * {
     position: relative;
     z-index: 2;
 }
 
 
 
-.hero h1 {
+.hero-promo h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     font-family: 'Playfair Display', serif;
     color: #fff;
 }
 
-.hero p {
+.hero-promo p {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
     color: #f4e9e0;
     font-family: 'Montserrat', sans-serif;
 }
 
-.hero .btn {
+.hero-promo .btn {
     background-color: #4b1e22;
     color: #fff;
     padding: 0.75rem 1.5rem;
@@ -61,6 +60,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.hero .btn:hover {
+.hero-promo .btn:hover {
     background-color: #6d2c31;
 }
