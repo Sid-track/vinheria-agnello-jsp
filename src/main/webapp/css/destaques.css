@@ -1,6 +1,7 @@
 .destaques {
     display: flex;
     justify-content: space-between;
+
     gap: 2rem;
     margin-bottom: 2rem;
 }
@@ -45,6 +46,7 @@
     margin: 1rem 0;
     display: flex;
     justify-content: center;
+    
 }
 
 .destaque .produto-card,

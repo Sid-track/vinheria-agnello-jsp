@@ -11,6 +11,8 @@
 <jsp:include page="/componentes/moleculas/destaques-rapidos.jsp" />
 <jsp:include page="/componentes/organismos/destaques.jsp" />
 <jsp:include page="/componentes/organismos/promocao.jsp" />
+<jsp:include page="/componentes/organismos/produtores-mini.jsp" />
+
 
 <div class="produtos-destaque">
     <h2>Produtos em Destaque</h2>
@@ -26,6 +28,7 @@
     </div>
 </div>
 
+<jsp:include page="/componentes/organismos/newsletter.jsp" />
 
 </main>
 </div>

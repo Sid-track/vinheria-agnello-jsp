@@ -1,4 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <link rel="stylesheet" href="css/destaques.css">
 
 <section class="destaques">
@@ -6,13 +7,15 @@
         <h2>Kits Presentes</h2>
         <p>Escolhas elegantes para presentear com estilo.</p>
         <div class="mini-card">
-            <jsp:include page="/componentes/moleculas/kit_card.jsp">
-                <jsp:param name="nome" value="Kit Aromas do Sul" />
-                <jsp:param name="descricao" value="2 vinhos + acessórios exclusivos." />
-                <jsp:param name="preco" value="179,90" />
-                <jsp:param name="imagem" value="images/kit1.jpg" />
-                <jsp:param name="id" value="1" />
-            </jsp:include>
+            <c:forEach var="kit" items="${kits}" begin="0" end="0">
+                <jsp:include page="/componentes/moleculas/kit_card.jsp">
+                    <jsp:param name="id" value="${kit.id}" />
+                    <jsp:param name="nome" value="${kit.nome}" />
+                    <jsp:param name="descricao" value="${kit.descricao}" />
+                    <jsp:param name="preco" value="${kit.preco}" />
+                    <jsp:param name="imagem" value="${kit.imagem}" />
+                </jsp:include>
+            </c:forEach>
         </div>
         <a href="kits" class="link">Ver todos os kits</a>
     </div>
@@ -21,12 +24,24 @@
         <h2>Loja Completa</h2>
         <p>Rótulos nacionais e importados para todos os gostos.</p>
         <div class="mini-card">
-            <jsp:include page="/componentes/moleculas/produto-card.jsp">
-                <jsp:param name="nome" value="Vinho Tinto Reserva" />
-                <jsp:param name="preco" value="89,90" />
-                <jsp:param name="imagem" value="images/vinho1.jpg" />
-                <jsp:param name="id" value="1" />
-            </jsp:include>
+            <c:forEach var="produto" items="${produtos}" begin="0" end="0">
+                <jsp:include page="/componentes/moleculas/produto-card.jsp">
+                    <jsp:param name="id" value="${produto.id}" />
+                    <jsp:param name="nome" value="${produto.nome}" />
+                    <jsp:param name="preco" value="${produto.preco}" />
+                    <jsp:param name="imagem" value="${produto.imagem}" />
+                </jsp:include>
+            </c:forEach>
+        </div>
+        <div class="mini-card">
+            <c:forEach var="produto" items="${produtos}" begin="0" end="0">
+                <jsp:include page="/componentes/moleculas/produto-card.jsp">
+                    <jsp:param name="id" value="${produto.id}" />
+                    <jsp:param name="nome" value="${produto.nome}" />
+                    <jsp:param name="preco" value="${produto.preco}" />
+                    <jsp:param name="imagem" value="${produto.imagem}" />
+                </jsp:include>
+            </c:forEach>
         </div>
         <a href="loja" class="link">Ver mais vinhos</a>
     </div>
