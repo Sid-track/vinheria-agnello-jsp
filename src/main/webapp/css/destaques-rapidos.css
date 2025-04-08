@@ -1,0 +1,29 @@
+.destaques-rapidos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    background-color: #f3eee9;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.04);
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.destaque-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #4b1e22;
+    font-weight: 500;
+    font-size: 0.95rem;
+    flex: 1;
+    min-width: 180px;
+}
+
+.destaque-item i {
+    font-size: 1.3rem;
+    color: #6d2c31;
+}

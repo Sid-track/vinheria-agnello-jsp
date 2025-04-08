@@ -1,53 +1,69 @@
-.kit {
+.produto-card, .kit-card {
     background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
-    text-align: center;
-    padding: 1rem;
     width: 220px;
-    transition: transform 0.3s ease;
-}
-
-.kit:hover {
-    transform: translateY(-5px);
-}
-
-.kit img {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-bottom: 0.75rem;
-}
-
-.kit h3 {
-    font-size: 1.1rem;
-    margin: 0.5rem 0;
-    color: #3a2c27;
-    font-family: 'Playfair Display', serif;
-}
-
-.kit p {
-    font-size: 0.95rem;
-    color: #6d4c41;
     font-family: 'Montserrat', sans-serif;
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+
+.imagem-container {
+    background-color: #f6f2ed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    height: 180px;
+    margin-bottom: 1rem;
+}
+
+.imagem-container img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.produto-card h3,
+.kit-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    color: #2c2c2c;
+}
+
+.descricao {
+    font-size: 0.85rem;
+    color: #555;
     margin-bottom: 0.5rem;
 }
 
-.kit .preco {
+.subtitulo {
+    font-size: 0.75rem;
     font-weight: bold;
-    color: #4b1e22;
-    margin-bottom: 0.75rem;
+    margin-top: 0.5rem;
+    color: #333;
 }
 
-.kit .btn {
-    background-color: #4b1e22;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background-color 0.3s ease;
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
 }
 
-.kit .btn:hover {
-    background-color: #6d2c31;
+.preco {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.icones i {
+    margin-left: 10px;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.icones i:hover {
+    color: #000;
 }

@@ -8,7 +8,7 @@
 .destaque {
     background-color: #fff;
     padding: 2rem;
-    border-radius: 12px;
+
     flex: 1;
     text-align: center;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
@@ -40,3 +40,16 @@
 .destaque .link:hover {
     color: #6d2c31;
 }
+
+.destaque .mini-card {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.destaque .produto-card,
+.destaque .kit {
+    max-width: 220px;
+}
+
+

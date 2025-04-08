@@ -6,9 +6,11 @@
 
 <link rel="stylesheet" href="css/home.css">
 
-<jsp:include page="/componentes/organismos/promocao.jsp" />
+
 <jsp:include page="/componentes/organismos/banner.jsp" />
+<jsp:include page="/componentes/moleculas/destaques-rapidos.jsp" />
 <jsp:include page="/componentes/organismos/destaques.jsp" />
+<jsp:include page="/componentes/organismos/promocao.jsp" />
 
 <div class="produtos-destaque">
     <h2>Produtos em Destaque</h2>
