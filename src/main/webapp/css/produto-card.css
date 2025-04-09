@@ -1,9 +1,8 @@
 .produto-card, .kit-card {
     background-color: #fff;
-    width: 220px;
+    width: 40%;
     font-family: 'Montserrat', sans-serif;
     padding: 1rem;
-    border: 1px solid #e0e0e0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.04);
 }
 

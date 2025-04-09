@@ -5,18 +5,24 @@
 <link rel="stylesheet" href="css/loja.css">
 <link rel="stylesheet" href="css/produto-card.css">
 
+<jsp:include page="/componentes/organismos/promocao.jsp" />
 <h1 class="titulo-pagina">Nossa Loja</h1>
+<hr>
+<jsp:include page="/componentes/organismos/controle-loja.jsp" />
 
-<div class="produtos">
-    <c:forEach var="produto" items="${produtos}">
-        <jsp:include page="/componentes/moleculas/produto-card.jsp">
-            <jsp:param name="id" value="${produto.id}" />
-            <jsp:param name="nome" value="${produto.nome}" />
-            <jsp:param name="preco" value="${produto.preco}" />
-            <jsp:param name="imagem" value="${produto.imagem}" />
-        </jsp:include>
-    </c:forEach>
+<div class="layout-loja">
+    <jsp:include page="/componentes/organismos/filtro-loja.jsp" />
+        <div class="produtos">
+            <c:forEach var="produto" items="${produtos}">
+                <jsp:include page="/componentes/moleculas/produto-card.jsp">
+                    <jsp:param name="id" value="${produto.id}" />
+                    <jsp:param name="nome" value="${produto.nome}" />
+                    <jsp:param name="preco" value="${produto.preco}" />
+                    <jsp:param name="imagem" value="${produto.imagem}" />
+                </jsp:include>
+            </c:forEach>
+        </div>
+
 </div>
-
 </main>
 </div>

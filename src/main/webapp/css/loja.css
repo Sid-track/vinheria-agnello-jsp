@@ -6,10 +6,17 @@
     text-align: center;
 }
 
+.layout-loja {
+    display: flex;
+    gap: 2rem;
+
+}
+
 .produtos {
     display: flex;
+    flex: 1;
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
-    padding: 1rem 0 3rem;
+    
 }
