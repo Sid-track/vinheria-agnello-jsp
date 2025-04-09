@@ -14,15 +14,15 @@ public class HomeServlet extends HttpServlet {
 
         // Produtos em destaque
         List<Map<String, String>> produtos = new ArrayList<>();
-        produtos.add(createProduto("1", "Vinho da Casa", "69.90", "images/vinho1.jpg"));
-        produtos.add(createProduto("2", "Seleção Especial", "129.90", "images/vinho2.jpg"));
-        produtos.add(createProduto("3", "Vinho Rosé", "89.50", "images/vinho3.jpg"));
+        produtos.add(createProduto("1", "Vinho da Casa", "69.90", "images/vinho.png"));
+        produtos.add(createProduto("2", "Seleção Especial", "129.90", "images/vinho.png"));
+        produtos.add(createProduto("3", "Vinho Rosé", "89.50", "images/vinho.png"));
         request.setAttribute("produtos", produtos);
 
         // Kits para destaque rápido
         List<Map<String, String>> kits = new ArrayList<>();
-        kits.add(createKit("1", "Kit Aromas do Sul", "2 vinhos + acessórios exclusivos.", "179,90", "images/kit1.jpg"));
-        kits.add(createKit("2", "Kit Degustação Brancos", "2 Vinhos brancos\nMix de nuts\nTaça personalizada", "179,90", "images/kit2.jpg"));
+        kits.add(createKit("1", "Kit Clássico Tinto", "1 Vinho Cabernet Sauvignon\n1 Vinho Malbec\n1 Mini queijo gouda\n1 Barra de chocolate amargo", "199,90", "images/kit1.png"));
+        kits.add(createKit("2", "Kit Degustação Brancos", "2 Vinhos brancos\nMix de nuts\nTaça personalizada", "179,90", "images/kit2.png"));
         request.setAttribute("kits", kits);
 
         request.getRequestDispatcher("home.jsp").forward(request, response);

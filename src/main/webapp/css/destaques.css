@@ -1,19 +1,22 @@
 .destaques {
     display: flex;
     justify-content: space-between;
-
     gap: 2rem;
     margin-bottom: 2rem;
+    max-width: 1200px; /* controla a largura total */
+    padding: 0 1.5rem;
+    margin-inline: auto; /* centraliza */
+    flex-wrap: wrap;
 }
 
 .destaque {
     background-color: #fff;
     padding: 2rem;
-
-    flex: 1;
+    flex: 1 1 48%;
     text-align: center;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
+    box-sizing: border-box;
 }
 
 .destaque:hover {
@@ -32,22 +35,31 @@
 }
 
 .destaque .link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #4b1e22;
     color: #4b1e22;
-    text-decoration: underline;
+    text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s;
+    border-radius: 4px;
+    transition: all 0.3s ease;
 }
 
 .destaque .link:hover {
-    color: #6d2c31;
+    background-color: #4b1e22;
+    color: #fff;
 }
+
 
 .destaque .mini-card {
     margin: 1rem 0;
     display: flex;
     justify-content: center;
-    
+    gap: 1rem;
+    flex-wrap: wrap;
 }
+
 
 .destaque .produto-card,
 .destaque .kit {
