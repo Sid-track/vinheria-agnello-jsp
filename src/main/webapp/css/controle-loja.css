@@ -1,0 +1,67 @@
+.controle-loja {
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.breadcrumbs {
+    font-size: 0.9rem;
+    color: #6d4c41;
+    margin-bottom: 1rem;
+}
+
+.breadcrumbs a {
+    color: #4b1e22;
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.controle-barra {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.busca-form {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.busca-form input {
+    border: none;
+    padding: 0.5rem;
+    width: 600px;
+}
+
+.busca-form button {
+    background-color: #4b1e22;
+    color: #fff;
+    border: none;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+.ordenar-form {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.ordenar-form select {
+    padding: 0.4rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contador {
+    font-size: 0.9rem;
+    color: #6d4c41;
+    margin-top: 1rem;
+}
