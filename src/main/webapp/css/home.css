@@ -18,3 +18,12 @@ body {
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
 }
+
+.produtos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+

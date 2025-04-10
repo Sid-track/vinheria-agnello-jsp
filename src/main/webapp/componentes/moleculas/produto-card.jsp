@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <link rel="stylesheet" href="css/produto-card.css">
-
-<div class="produto-card">
+    
+<a class="produto-card" href="produto?id=${param.id}">
     <div class="imagem-container">
         <img src="${param.imagem}" alt="${param.nome}" />
     </div>
@@ -15,4 +15,4 @@
             <i class="fa-regular fa-heart"></i>
         </div>
     </div>
-</div>
+</a>

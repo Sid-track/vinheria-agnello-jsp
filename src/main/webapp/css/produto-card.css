@@ -1,6 +1,7 @@
+
 .produto-card, .kit-card {
     background-color: #fff;
-    width: 40%;
+    width: 25%;
     font-family: 'Montserrat', sans-serif;
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.04);
@@ -28,12 +29,14 @@
     font-weight: 600;
     margin: 0.5rem 0;
     color: #2c2c2c;
+    text-decoration: none;
 }
 
 .descricao {
     font-size: 0.85rem;
     color: #555;
     margin-bottom: 0.5rem;
+    text-decoration: none;
 }
 
 .subtitulo {
@@ -41,6 +44,7 @@
     font-weight: bold;
     margin-top: 0.5rem;
     color: #333;
+    text-decoration: none;
 }
 
 .rodape {
@@ -54,6 +58,7 @@
     font-size: 1rem;
     font-weight: 600;
     color: #333;
+    text-decoration: none;
 }
 
 .icones i {
@@ -61,8 +66,10 @@
     color: #555;
     cursor: pointer;
     transition: color 0.3s;
+    text-decoration: none;
 }
 
 .icones i:hover {
     color: #000;
+    text-decoration: none;
 }
