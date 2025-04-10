@@ -16,26 +16,31 @@
     </p>
 
     <h2 class="clube-sec">Como funciona?</h2>
-    <div class="clube-passos">
-        <div class="passo">
+    <div class="clube-etapas">
+        <div class="etapa">
             <i class="fa-solid fa-check"></i>
-            <p><strong>Escolha seu plano</strong><br>Essencial, Clássico, Reserva ou Empresarial.</p>
+            <h4>Escolha seu plano</h4>
+            <p>Essencial, Clássico, Reserva ou Empresarial.</p>
         </div>
-        <div class="passo">
+        <div class="etapa">
             <i class="fa-solid fa-box"></i>
-            <p><strong>Receba em casa</strong><br>Seleção dos sommeliers, com frete gratuito.</p>
+            <h4>Receba em casa</h4>
+            <p>Seleção dos sommeliers, com frete gratuito.</p>
         </div>
-        <div class="passo">
+        <div class="etapa">
             <i class="fa-solid fa-wine-glass"></i>
-            <p><strong>Aprenda e deguste</strong><br>Guia com dicas e harmonizações.</p>
+            <h4>Aprenda e deguste</h4>
+            <p>Guia com dicas e harmonizações.</p>
         </div>
-        <div class="passo">
+        <div class="etapa">
             <i class="fa-solid fa-gift"></i>
-            <p><strong>Benefícios</strong><br>Descontos, eventos e brindes.</p>
+            <h4>Benefícios</h4>
+            <p>Descontos, eventos e brindes.</p>
         </div>
-        <div class="passo">
+        <div class="etapa">
             <i class="fa-solid fa-arrows-rotate"></i>
-            <p><strong>Assinatura flexível</strong><br>Pause ou cancele quando quiser.</p>
+            <h4>Assinatura flexível</h4>
+            <p>Pause ou cancele quando quiser.</p>
         </div>
     </div>
 
@@ -45,7 +50,10 @@
             <jsp:include page="/componentes/moleculas/plano_card.jsp">
                 <jsp:param name="nome" value="${plano.nome}" />
                 <jsp:param name="descricao" value="${plano.descricao}" />
+                <jsp:param name="beneficios" value="${fn:join(plano.beneficios, ';')}" />
                 <jsp:param name="preco" value="${plano.preco}" />
+                <jsp:param name="botao" value="${plano.botao}" />
+                <jsp:param name="cor" value="${plano.cor}" />
             </jsp:include>
         </c:forEach>
     </section>
@@ -79,6 +87,6 @@
         <a class="btn-assinar" href="cadastro.jsp">ASSINAR</a>
     </div>
 </section>
-
+<jsp:include page="/componentes/organismos/footer.jsp" />
 </main>
 </div>
