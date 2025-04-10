@@ -1,0 +1,23 @@
+.sobre-bloco {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sobre-bloco h2 {
+    font-family: 'Playfair Display', serif;
+    color: #4b1e22;
+    margin-bottom: 0.75rem;
+}
+
+.sobre-bloco p {
+    font-family: 'Montserrat', sans-serif;
+    color: #6d4c41;
+    font-size: 1rem;
+    line-height: 1.6;
+}

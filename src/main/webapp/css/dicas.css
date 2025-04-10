@@ -1,0 +1,225 @@
+/* Tipos de vinho */
+.dicas-tipos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 3rem 0;
+    padding: 0 1rem;
+}
+
+.tipo-vinho {
+    background-color: #f7f1ec;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tipo-vinho:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    background-color: #f0e6e1;
+}
+
+.tipo-vinho img {
+    width: 70px;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.tipo-vinho .info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: #4b1e22;
+    margin: 0 0 0.3rem;
+}
+
+.tipo-vinho .info p {
+    font-size: 0.9rem;
+    color: #5e4b44;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Bloco geral */
+.secao-dicas {
+    background-color: #fff;
+    padding: 2.5rem 2rem;
+    margin: 3rem auto;
+    max-width: 950px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.03);
+    border-radius: 12px;
+    transition: box-shadow 0.3s;
+}
+
+.secao-dicas:hover {
+    box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+.secao-dicas h2 {
+    font-family: 'Playfair Display', serif;
+    color: #4b1e22;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    position: relative;
+    text-align: center;
+}
+
+.secao-dicas h2::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #a67c52; /* douradinho */
+    display: block;
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+
+.secao-dicas p,
+.secao-dicas ul {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #5e4b44;
+}
+
+/* Harmonização com ícones */
+.harmonizacao-lista {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1.5rem;
+}
+
+.secao-dicas .harmonizacao-lista li {
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.8rem;
+    font-size: 1rem;
+}
+
+.secao-dicas .harmonizacao-lista li::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: #4b1e22;
+}
+
+.secao-dicas .harmonizacao-lista li:nth-child(1)::before { content: "\f6d9"; }
+.secao-dicas .harmonizacao-lista li:nth-child(2)::before { content: "\f818"; }
+.secao-dicas .harmonizacao-lista li:nth-child(3)::before { content: "\f578"; }
+.secao-dicas .harmonizacao-lista li:nth-child(4)::before { content: "\f7ef"; }
+.secao-dicas .harmonizacao-lista li:nth-child(5)::before { content: "\f5c0"; }
+
+.destaque-dica {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #a73c3c;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Temperaturas */
+.tabela-temperaturas {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+
+.tabela-temperaturas .bloco {
+    background-color: #f7f1ec;
+    padding: 1.2rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 180px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.tabela-temperaturas .bloco:hover {
+    background-color: #f0e6e1;
+    transform: translateY(-4px);
+}
+
+.tabela-temperaturas .bloco h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #4b1e22;
+    margin-bottom: 0.5rem;
+}
+
+.tabela-temperaturas .bloco:nth-child(1) {
+    background-color: #f5e0dc;
+    color: #4b1e22;
+}
+
+.tabela-temperaturas .bloco:nth-child(2) {
+    background-color: #f6ede6;
+    color: #5e4b44;
+}
+
+.tabela-temperaturas .bloco:nth-child(3) {
+    background-color: #e8f0ea;
+    color: #35524a;
+}
+
+.tabela-temperaturas .bloco:nth-child(4) {
+    background-color: #edf4f9;
+    color: #2c3e50;
+}
+
+
+/* Imagem do rótulo */
+.dica-imagem {
+    display: block;
+    margin: 2rem auto;
+    max-width: 320px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.dica-imagem:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    .dicas-tipos {
+        grid-template-columns: 1fr;
+    }
+
+    .tabela-temperaturas {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.conteudo-rotulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.conteudo-rotulo ul {
+    flex: 1 1 300px;
+    margin: 0;
+}
+
+.conteudo-rotulo .dica-imagem {
+    flex: 0 0 280px;
+    max-width: 280px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin: 0;
+}

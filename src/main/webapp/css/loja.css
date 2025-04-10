@@ -1,0 +1,22 @@
+.titulo-pagina {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #4b1e22;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.layout-loja {
+    display: flex;
+    gap: 2rem;
+
+}
+
+.produtos {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    
+}

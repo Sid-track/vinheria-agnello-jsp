@@ -1,0 +1,69 @@
+.destaques {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    max-width: 1200px;
+    
+    margin-inline: auto;
+    flex-wrap: wrap;
+}
+
+.destaque {
+    background-color: #fff;
+    padding: 1rem;
+    flex: 1 1 48%;
+    text-align: center;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+}
+
+.destaque:hover {
+    transform: translateY(-4px);
+}
+
+.destaque h2 {
+    margin-bottom: 0.5rem;
+    color: #4b1e22;
+    font-family: 'Playfair Display', serif;
+}
+
+.destaque p {
+    color: #6d4c41;
+    margin-bottom: 1rem;
+}
+
+.destaque .link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #4b1e22;
+    color: #4b1e22;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.destaque .link:hover {
+    background-color: #4b1e22;
+    color: #fff;
+}
+
+
+.destaque .mini-card {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+
+.destaque .produto-card,
+.destaque .kit {
+    max-width: 220px;
+}
+
+

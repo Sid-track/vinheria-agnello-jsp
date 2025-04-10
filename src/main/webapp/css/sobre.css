@@ -1,0 +1,123 @@
+.sobre-banner {
+    width: 100%;
+    object-fit: cover;
+    max-height: 300px;
+    display: block;
+}
+
+.sobre .bloco {
+    padding: 3rem 4rem;
+    max-width: 1000px;
+    margin: 0 auto 3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sobre .texto-central {
+    text-align: center;
+}
+
+.sobre .texto-central h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    color: #4b1e22;
+    margin-bottom: 1rem;
+}
+
+.sobre .texto-central p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #5e4b44;
+}
+
+.imagem-lateral,
+.imagem-invertida,
+.bloco-assinatura {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    max-width: 1000px;
+    margin: 0 auto 3rem;
+    padding: 3rem 4rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.sobre .imagem-lateral img,
+.sobre .imagem-invertida img,
+.sobre .bloco-assinatura img {
+    width: 350px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.sobre .imagem-invertida {
+    flex-direction: row-reverse;
+}
+
+.sobre .botao {
+    background-color: #4b1e22;
+    color: #fff;
+    padding: 0.6rem 1.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.sobre .botao:hover {
+    background-color: #6d2c31;
+}
+
+.sobre .botao.destaque {
+    background-color: #4b1e22;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.sobre .bloco-assinatura {
+    background-color: #fffefe;
+    padding: 4rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+
+.sobre .onde {
+    background-color: #f3eee8;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.sobre .onde h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: #4b1e22;
+    margin-bottom: 1rem;
+}
+
+.sobre .onde p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1rem;
+    color: #5e4b44;
+}
+
+.imagem-lateral > div,
+.imagem-invertida > div,
+.bloco-assinatura > div {
+    flex: 1;
+    min-width: 300px;
+}
+
+.imagem-lateral img,
+.imagem-invertida img,
+.bloco-assinatura img {
+    width: 350px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+

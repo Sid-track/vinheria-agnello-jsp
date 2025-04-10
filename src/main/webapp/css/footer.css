@@ -1,0 +1,98 @@
+.rodape {
+    background-color: #f7f1ec;
+    color: #4b1e22;
+    padding: 3rem 2rem 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    border-top: 1px solid #e0d6cf;
+    display: flex
+;
+    flex-direction: column;
+}
+
+.rodape-conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 3rem;
+}
+
+.rodape-coluna {
+    flex: 1 1 220px;
+    min-width: 200px;
+}
+
+.rodape-coluna h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #4b1e22;
+}
+
+.rodape-coluna p {
+    margin: 0 0 1rem;
+    color: #5e4b44;
+    line-height: 1.5;
+}
+
+.rodape-coluna ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rodape-coluna ul li {
+    margin-bottom: 0.5rem;
+}
+
+.rodape-coluna ul li a {
+    text-decoration: none;
+    color: #6d4c41;
+    transition: color 0.3s ease;
+}
+
+.rodape-coluna ul li a:hover {
+    color: #a73c3c;
+}
+
+.social-icons {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.social-icons a {
+    font-size: 1.2rem;
+    color: #4b1e22;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #a73c3c;
+}
+
+.rodape-final {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 0.85rem;
+    color: #6d4c41;
+    border-top: 1px solid #e3d8d0;
+    padding-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .rodape-conteudo {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .rodape-coluna {
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
