@@ -11,6 +11,6 @@
 <div class="perfil-container">
     <jsp:include page="/componentes/moleculas/perfil_info.jsp" />
 </div>
-
+<jsp:include page="/componentes/organismos/footer.jsp" />
 </main>
 </div>

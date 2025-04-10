@@ -28,6 +28,7 @@
         </jsp:include>
     </div>
 </div>
+<jsp:include page="/componentes/organismos/footer.jsp" />
 
 </main>
 </div>

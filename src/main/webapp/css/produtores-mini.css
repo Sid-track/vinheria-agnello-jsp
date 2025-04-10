@@ -62,3 +62,10 @@
     gap: 2rem;
 }
 
+.produtor img{
+    width: 20rem;
+    height: 12rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+

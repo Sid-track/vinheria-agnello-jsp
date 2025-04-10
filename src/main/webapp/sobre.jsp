@@ -32,7 +32,7 @@
         </div>
     </div>
 
-    <div class="bloco assinatura">
+    <div class="bloco-assinatura">
         <div>
             <h2>Nosso Clube de Assinatura</h2>
             <p>Criamos o Clube Agnello para quem deseja receber vinhos selecionados diretamente em casa, com benefícios exclusivos. Os assinantes têm acesso a descontos especiais, rótulos diferenciados e uma curadoria feita por sommeliers para garantir experiências únicas.</p>
@@ -53,3 +53,4 @@
         <p>Embora a Vinheria Agnello tenha nascido como uma loja física, agora expandimos para o digital para levar nossos vinhos a todo o Brasil. Nosso e-commerce foi desenvolvido para oferecer a mesma experiência acolhedora da loja, com recomendações personalizadas, entrega rápida e a curadoria de sempre.</p>
     </div>
 </section>
+<jsp:include page="/componentes/organismos/footer.jsp" />

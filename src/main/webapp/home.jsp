@@ -3,16 +3,13 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ include file="/componentes/organismos/template.jsp" %>
 
-
 <link rel="stylesheet" href="css/home.css">
-
 
 <jsp:include page="/componentes/organismos/banner.jsp" />
 <jsp:include page="/componentes/moleculas/destaques-rapidos.jsp" />
 <jsp:include page="/componentes/organismos/destaques.jsp" />
 <jsp:include page="/componentes/organismos/promocao.jsp" />
 <jsp:include page="/componentes/organismos/produtores-mini.jsp" />
-
 
 <div class="produtos-destaque">
     <h2>Produtos em Destaque</h2>
@@ -29,6 +26,4 @@
 </div>
 
 <jsp:include page="/componentes/organismos/newsletter.jsp" />
-
-</main>
-</div>
+<jsp:include page="/componentes/organismos/footer.jsp" />

@@ -17,6 +17,6 @@
     </c:forEach>
 
 </div>
-
+<jsp:include page="/componentes/organismos/footer.jsp" />
 </main>
 </div>
