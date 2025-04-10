@@ -9,7 +9,7 @@
     <h3>${param.nome}</h3>
     <p class="descricao">${param.descricao}</p>
     <p class="subtitulo">Harmonização</p>
-    <div class="rodape">
+    <div class="pe">
         <span class="preco">R$ ${param.preco}</span>
         <div class="icones">
             <i class="fa-solid fa-cart-shopping"></i>

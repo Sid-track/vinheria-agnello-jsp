@@ -17,10 +17,10 @@ import java.util.stream.Collectors;
 public class ProdutoServlet extends HttpServlet {
 
     private static final List<Map<String, String>> produtos = Arrays.asList(
-            createProduto("1", "McGuigan Shiraz", "89.90", "images/vinho1.jpg"),
-            createProduto("2", "Pinot Grigio Branco", "74.50", "images/vinho2.jpg"),
-            createProduto("3", "Porta 6 Tinto", "99.00", "images/vinho3.jpg"),
-            createProduto("4", "Malbec Reserva", "109.90", "images/vinho4.jpg")
+            createProduto("1", "McGuigan Shiraz", "89.90", "images/vinho.png"),
+            createProduto("2", "Pinot Grigio Branco", "74.50", "images/vinho.png"),
+            createProduto("3", "Porta 6 Tinto", "99.00", "images/vinho.png"),
+            createProduto("4", "Malbec Reserva", "109.90", "images/vinho.png")
     );
 
     @Override
