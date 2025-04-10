@@ -1,112 +1,218 @@
-.clube-container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 2rem 1rem 4rem;
-    background-color: #fdfbf7;
-    color: #4b1e22;
-    font-family: 'Montserrat', sans-serif;
-}
+    /* === Como Funciona e Vantagens === */
+    .clube-etapas, .clube-vantagens {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        max-width: 1000px;
+        margin: 3rem auto;
+        padding: 0 1rem;
+    }
 
-.clube-titulo {
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-}
+    .etapa, .vantagem {
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 1.5rem;
+        text-align: center;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        flex: 1 1 180px;
+        max-width: 200px;
+        transition: transform 0.3s ease;
+    }
 
-.clube-sub {
-    text-align: center;
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    color: #5e4b44;
-}
+    .etapa:hover, .vantagem:hover {
+        transform: translateY(-4px);
+    }
 
-.clube-descricao {
-    max-width: 800px;
-    margin: 0 auto 3rem;
-    font-size: 1rem;
-    color: #6d4c41;
-    line-height: 1.6;
-    text-align: center;
-}
+    .etapa i, .vantagem i {
+        font-size: 2rem;
+        margin-bottom: 0.7rem;
+        color: #4b1e22;
+    }
 
-.clube-sec {
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: 'Playfair Display', serif;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    color: #4b1e22;
-}
+    .etapa h4, .vantagem h4 {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+        color: #4b1e22;
+    }
 
-.clube-passos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    text-align: center;
-    margin-bottom: 3rem;
-}
+    .etapa p, .vantagem p {
+        font-size: 0.9rem;
+        color: #6d4c41;
+        line-height: 1.4;
+    }
 
-.passo i {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-    color: #4b1e22;
-}
+    /* === Cartões dos Planos === */
+    .clube-planos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-top: 3rem;
+        padding: 0 1rem;
+    }
 
-.passo p {
-    font-size: 0.95rem;
-    color: #5e4b44;
-    max-width: 150px;
-    margin: 0 auto;
-}
+    .plano {
+        background-color: #fff;
+        border: 2px solid #e8c59c;
+        border-radius: 12px;
+        padding: 2rem;
+        width: 100%;
+        max-width: 300px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+    }
 
-.clube-planos {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    margin-bottom: 3rem;
-}
+    .plano:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    }
 
-.clube-vantagens {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    text-align: center;
-    margin-bottom: 3rem;
-}
+    .plano h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.5rem;
+        color: #4b1e22;
+        margin-bottom: 1rem;
+    }
 
-.vantagem i {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-    color: #4b1e22;
-}
+    .plano ul {
+        text-align: left;
+        list-style: none;
+        padding: 0;
+        margin-bottom: 1.2rem;
+    }
 
-.vantagem p {
-    font-size: 0.9rem;
-    color: #5e4b44;
-}
+    .plano ul li {
+        position: relative;
+        padding-left: 1.4rem;
+        margin-bottom: 0.6rem;
+        font-size: 0.95rem;
+        color: #6d4c41;
+        font-family: 'Montserrat', sans-serif;
+    }
 
-.clube-cta {
-    text-align: center;
-    font-size: 1rem;
-    margin-top: 2rem;
-}
+    .plano ul li::before {
+        content: "\f00c";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        color: #a73c3c;
+        position: absolute;
+        left: 0;
+        top: 0.1rem;
+    }
 
-.btn-assinar {
-    margin-top: 1rem;
-    display: inline-block;
-    background-color: #4b1e22;
-    color: #fff;
-    padding: 0.8rem 2rem;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background-color 0.3s;
-}
+    .plano-preco {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #4b1e22;
+        margin-bottom: 1rem;
+    }
 
-.btn-assinar:hover {
-    background-color: #6d2c31;
-}
+    .plano-btn {
+        background-color: #4b1e22;
+        color: #fff;
+        padding: 0.6rem 1.4rem;
+        border-radius: 8px;
+        font-weight: 500;
+        text-decoration: none;
+        display: inline-block;
+        transition: background-color 0.3s;
+    }
+
+    .plano-btn:hover {
+        background-color: #6d2c31;
+    }
+
+    @media (max-width: 768px) {
+        .etapa, .vantagem {
+            max-width: 100%;
+        }
+
+        .clube-etapas, .clube-vantagens, .clube-planos {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .plano[data-tipo="essencial"] {
+        border-color: #8a973b;
+    }
+    .plano[data-tipo="classico"] {
+        border-color: #a73c3c;
+    }
+    .plano[data-tipo="reserva"] {
+        border-color: #b6975f;
+    }
+    .plano[data-tipo="empresarial"] {
+        border-color: #4b1e22;
+    }
+
+    .clube-container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 3rem 2rem;
+    }
+
+    .clube-titulo {
+        font-family: 'Playfair Display', serif;
+        font-size: 2.5rem;
+        color: #4b1e22;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .clube-sub {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2rem;
+        text-align: center;
+        color: #6d4c41;
+        margin-bottom: 2rem;
+    }
+
+    .clube-descricao {
+        text-align: center;
+        font-size: 1rem;
+        max-width: 800px;
+        margin: 0 auto 3rem;
+        line-height: 1.7;
+        color: #5e4b44;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .clube-sec {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.6rem;
+        text-align: center;
+        color: #4b1e22;
+        margin: 3rem 0 1.5rem;
+    }
+
+    .clube-cta {
+        text-align: center;
+        margin-top: 4rem;
+    }
+
+    .clube-cta p {
+        font-size: 1.1rem;
+        color: #4b1e22;
+        margin-bottom: 1rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .btn-assinar {
+        background-color: #4b1e22;
+        color: #fff;
+        padding: 0.8rem 2rem;
+        border-radius: 10px;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: background-color 0.3s;
+        display: inline-block;
+    }
+
+    .btn-assinar:hover {
+        background-color: #6d2c31;
+    }
