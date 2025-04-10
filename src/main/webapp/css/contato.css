@@ -1,0 +1,40 @@
+.titulo-pagina {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #4b1e22;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contato-conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.contato-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 500px;
+}
+
+.contato-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    color: #4b1e22;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contato-item i {
+    font-size: 1.2rem;
+    color: #6d4c41;
+}

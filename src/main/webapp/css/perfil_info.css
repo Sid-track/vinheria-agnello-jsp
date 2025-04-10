@@ -1,0 +1,59 @@
+.perfil-info {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.perfil-foto {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.perfil-info h2 {
+    margin-bottom: 0.5rem;
+    font-family: 'Playfair Display', serif;
+    color: #4b1e22;
+}
+
+.perfil-info p {
+    color: #6d4c41;
+    margin-bottom: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.perfil-acoes {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.perfil-acoes .btn {
+    background-color: #4b1e22;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.perfil-acoes .btn:hover {
+    background-color: #6d2c31;
+}
+
+.perfil-acoes .btn-secundario {
+    background-color: #aaa;
+}
+
+.perfil-acoes .btn-secundario:hover {
+    background-color: #888;
+}

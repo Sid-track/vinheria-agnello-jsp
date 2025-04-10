@@ -1,0 +1,65 @@
+.titulo-pagina {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #4b1e22;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.clube-descricao {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    font-size: 1.1rem;
+    color: #6d4c41;
+}
+
+.btn-assinar {
+    display: inline-block;
+    background-color: #4b1e22;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.btn-assinar:hover {
+    background-color: #6d2c31;
+}
+
+.clube-planos {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.plano {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.plano:hover {
+    transform: translateY(-5px);
+}
+
+.plano h2 {
+    font-family: 'Playfair Display', serif;
+    color: #4b1e22;
+    margin-bottom: 0.5rem;
+}
+
+.plano p {
+    margin: 0.25rem 0;
+    color: #6d4c41;
+    font-family: 'Montserrat', sans-serif;
+}
+

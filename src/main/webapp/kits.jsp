@@ -1,16 +1,28 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: ferre
-  Date: 28/03/2025
-  Time: 18:16
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ include file="/componentes/organismos/template.jsp" %>
 
-</body>
-</html>
+<link rel="stylesheet" href="css/kits.css">
+
+<h1 class="titulo-pagina">Kits Presentes</h1>
+
+<p class="kits-descricao">
+    Presentes ideais para quem aprecia bons momentos. Escolha entre kits temáticos e surpresas selecionadas.
+</p>
+
+<div class="kits">
+    <c:forEach var="kit" items="${kits}">
+        <jsp:include page="/componentes/moleculas/kit_card.jsp">
+            <jsp:param name="id" value="${kit.id}" />
+            <jsp:param name="nome" value="${kit.nome}" />
+            <jsp:param name="descricao" value="${kit.descricao}" />
+            <jsp:param name="preco" value="${kit.preco}" />
+            <jsp:param name="imagem" value="${kit.imagem}" />
+        </jsp:include>
+    </c:forEach>
+
+</div>
+
+</main>
+</div>

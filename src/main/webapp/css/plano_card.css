@@ -1,0 +1,31 @@
+.plano {
+    background-color: #fff;
+    border: 2px solid #e8c59c;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 350px;
+    margin-inline: auto;
+}
+
+.plano:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.plano h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #4b1e22;
+}
+
+.plano p {
+    font-size: 1rem;
+    color: #6d4c41;
+    margin: 0.5rem 0;
+}

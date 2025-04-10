@@ -1,0 +1,14 @@
+.titulo-pagina {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #4b1e22;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.perfil-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 3rem;
+}

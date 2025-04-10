@@ -1,0 +1,28 @@
+.dica {
+background-color: #fff;
+border-radius: 10px;
+padding: 1.5rem;
+box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+width: 100%;
+max-width: 500px;
+margin: 0 auto;
+text-align: left;
+transition: transform 0.3s ease;
+}
+
+.dica:hover {
+transform: translateY(-3px);
+}
+
+.dica h3 {
+font-family: 'Playfair Display', serif;
+color: #4b1e22;
+margin-bottom: 0.5rem;
+}
+
+.dica p {
+font-family: 'Montserrat', sans-serif;
+color: #6d4c41;
+font-size: 0.95rem;
+line-height: 1.5;
+}
