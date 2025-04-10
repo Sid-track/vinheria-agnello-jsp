@@ -10,6 +10,8 @@
 <p class="kits-descricao">
     Presentes ideais para quem aprecia bons momentos. Escolha entre kits temáticos e surpresas selecionadas.
 </p>
+<div class="layout-kits">
+<jsp:include page="/componentes/organismos/filtro-kits.jsp" />
 
 <div class="kits">
     <c:forEach var="kit" items="${kits}">
@@ -23,6 +25,6 @@
     </c:forEach>
 
 </div>
-
+</div>
 </main>
 </div>

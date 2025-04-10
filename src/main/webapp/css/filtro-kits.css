@@ -1,0 +1,49 @@
+.filtro-kits {
+    background-color: #f7f1ec;
+    padding: 1.5rem;
+    width: 17%;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    color: #4b1e22;
+}
+
+.filtro-kits h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #4b1e22;
+    padding-bottom: 0.5rem;
+}
+
+.grupo-filtro {
+    margin-bottom: 1.5rem;
+}
+
+.titulo-grupo {
+    background: none;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    color: #4b1e22;
+    font-size: 0.8rem;
+    text-align: left;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 0.5rem;
+}
+
+.opcoes {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.opcoes li {
+    margin-bottom: 0.4rem;
+}
+
+.opcoes input[type="checkbox"] {
+    accent-color: #4b1e22;
+}

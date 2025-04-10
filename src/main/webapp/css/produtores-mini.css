@@ -24,8 +24,8 @@
 }
 
 .mini-produtor img {
-    width: 100%;
-    height: auto;
+    width: 300px;
+    height: 200px;
     border-radius: 12px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
@@ -36,3 +36,29 @@
     color: #333;
     font-weight: 500;
 }
+
+.produtores-mini .link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #4b1e22;
+    color: #4b1e22;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.produtores-mini .link:hover {
+    background-color: #4b1e22;
+    color: #fff;
+}
+
+.cards-produtores{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
