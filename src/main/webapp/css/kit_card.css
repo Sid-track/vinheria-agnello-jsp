@@ -5,6 +5,9 @@
     padding: 1rem;
     border: 1px solid #e0e0e0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .imagem-container {
@@ -23,8 +26,8 @@
     object-fit: contain;
 }
 
-.produto-card h3,
-.kit-card h3 {
+.kit-card h3,
+.produto-card h3 {
     font-size: 1rem;
     font-weight: 600;
     margin: 0.5rem 0;
@@ -34,14 +37,13 @@
 .descricao {
     font-size: 0.85rem;
     color: #555;
-    margin-bottom: 0.5rem;
+    margin: 0.5rem 0;
+    padding-left: 1.2rem;
+    list-style-type: disc;
 }
 
-.subtitulo {
-    font-size: 0.75rem;
-    font-weight: bold;
-    margin-top: 0.5rem;
-    color: #333;
+.descricao li {
+    margin-bottom: 0.25rem;
 }
 
 .rodape {

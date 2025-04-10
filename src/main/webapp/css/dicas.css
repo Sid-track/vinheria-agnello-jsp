@@ -2,23 +2,101 @@
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
     color: #4b1e22;
-    margin-bottom: 2rem;
     text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 .dicas-descricao {
     text-align: center;
-    max-width: 700px;
-    margin: 0 auto 2rem;
-    font-size: 1.1rem;
+    max-width: 720px;
+    margin: 0 auto 3rem;
+    font-size: 1rem;
+    color: #6d4c41;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
+.secao-dicas {
+    background-color: #f7f1ec;
+    padding: 2rem 3rem;
+    margin: 0 auto;
+    max-width: 1100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-bottom: 2.5rem;
+}
+
+.secao-dicas h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: #4b1e22;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #c5bdb9;
+    padding-bottom: 0.5rem;
+}
+
+.secao-dicas p {
+    font-size: 1rem;
+    color: #5e4b44;
+    line-height: 1.7;
+    margin-bottom: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.destaque-dica {
+    color: #a73c3c;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+.tabela-temperaturas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.tabela-temperaturas .bloco {
+    flex: 1 1 180px;
+    background-color: #fff;
+    border: 1px solid #e7dfd9;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+}
+
+.tabela-temperaturas .bloco h3 {
+    font-size: 1rem;
+    color: #4b1e22;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tabela-temperaturas .bloco p {
+    font-size: 0.9rem;
     color: #6d4c41;
 }
 
-.lista-dicas {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-    padding-bottom: 3rem;
+.dica-imagem {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 2rem auto;
+    display: block;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
+@media (max-width: 768px) {
+    .secao-dicas {
+        padding: 1.5rem;
+    }
+
+    .tabela-temperaturas {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

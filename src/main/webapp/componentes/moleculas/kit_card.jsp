@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html; charset=UTF-8" language="java" %>
 <link rel="stylesheet" href="css/kit_card.css">
 
 <div class="kit-card">

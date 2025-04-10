@@ -21,6 +21,12 @@
     margin-bottom: 1.5rem;
 }
 
+.filtro-grupo{
+    display: flex;
+    flex-direction: column;
+}
+
+
 .titulo-grupo {
     background: none;
     border: none;

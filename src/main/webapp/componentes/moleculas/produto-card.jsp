@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html; charset=UTF-8" language="java" %>
 <link rel="stylesheet" href="css/produto-card.css">
     
 <a class="produto-card" href="produto?id=${param.id}">
